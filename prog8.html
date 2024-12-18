@@ -1,0 +1,40 @@
+<!-- 8.	Write XHTML and PHP program to insert/delete/display student records in the database and display
+  the appropriate message in the web page. (Design HTML interface for getting user choice to create/delete/display). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Records Management</title>
+</head>
+<body>
+    <h1>Student Records Management</h1>
+    <form action="prog8.php" method="POST">
+        <h3>Select Action:</h3>
+        <label>
+            <input type="radio" name="action" value="insert" required> Insert Record
+        </label><br>
+        <label>
+            <input type="radio" name="action" value="delete"> Delete Record
+        </label><br>
+        <label>
+            <input type="radio" name="action" value="display"> Display Records
+        </label><br>
+
+        <div id="form-fields" style="margin-top: 20px;">
+            <h3>Enter Details (For Insert/Delete):</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age"><br><br>
+
+            <label for="course">Course:</label>
+            <input type="text" id="course" name="course"><br><br>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
